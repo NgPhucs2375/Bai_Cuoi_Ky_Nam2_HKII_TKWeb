@@ -196,3 +196,42 @@ footer {
     width: 20px;
     margin-right: 5px;
 }
+
+.chinh{
+    width: 100%; 
+   background-color:rgb(42, 45, 52);
+    height: 100%;
+    display: flex;
+   
+
+}
+.nav{
+    color: aliceblue;
+    font-size: 30px;
+}
+.hinhanh{
+    width: 200px;
+    border-radius: 20px;
+}
+.trang{
+    font-size: 15px;
+    color:aliceblue;
+}
+.gia{
+    font-size: 20px;
+    color: rgb(45, 194, 117);
+    text-align: left;
+    padding: 0 0 0 10px;
+}
+.ngay{
+    font-size: 15px;
+    color: aliceblue;
+}
+.dcb{
+    padding:20px 30px 0 0;
+}
+
+.ngay-flex{
+    display: flex;
+   padding: 0 40px 0 0;
+}
