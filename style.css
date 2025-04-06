@@ -1,8 +1,15 @@
+html {
+    line-height: 1.15;
+    text-size-adjust: 100%;
+}
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: Inter, sans-serif;
+    font-weight: normal;
+    color: rgb(42, 45, 52);
+    min-height: 100%;
+    font-size: 14px;
+    overflow: auto;
+
 }
 
 header {
@@ -48,7 +55,7 @@ h2 {
 }
 
 div > div {
-    background-color: white;
+    /* background-color: white; */
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -72,7 +79,7 @@ button:hover {
     background-color: #218838;
 }
 
-footer {
+/* footer {
     background-color: #333;
     color: white;
     text-align: center;
@@ -80,4 +87,112 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+} */
+
+.BangGiamGia {
+    position: relative; /* Đảm bảo phần tử cha có position relative */
+    width: 100%;
+    height: auto; /* Để chiều cao tự động điều chỉnh theo hình ảnh */
+}
+
+.BangGiamGia img {
+    width: 100%;
+    height: 500px; /* Giữ tỷ lệ cho hình ảnh */
+    border-radius: 12px;
+    object-fit: cover; /* Đảm bảo hình ảnh bao phủ toàn bộ phần tử */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%; /* Căn giữa theo chiều dọc */
+    left: 50%; /* Căn giữa theo chiều ngang */
+    transform: translate(-50%, -50%); /* Đảm bảo căn chính xác vào giữa */
+    color: white; /* Màu chữ */
+    text-align: center; /* Căn giữa văn bản */
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5); /* Nền mờ */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.text-overlay h2 {
+    font-size: 32px;
+}
+
+.text-overlay p {
+    font-size: 18px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-left, .footer-center, .footer-right {
+    width: 30%;
+}
+
+.footer-item {
+    margin-bottom: 20px;
+}
+
+.footer-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-item p, .footer-item a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-item a:hover {
+    text-decoration: underline;
+}
+
+.footer-item form input {
+    padding: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.footer-item form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-item form button:hover {
+    background-color: #218838;
+}
+
+.social-icons a {
+    font-size: 20px;
+    color: white;
+    margin: 0 10px;
+}
+
+.languages a {
+    font-size: 16px;
+    color: white;
+    margin-right: 10px;
+}
+
+.languages img {
+    width: 20px;
+    margin-right: 5px;
 }
